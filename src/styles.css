@@ -4,17 +4,23 @@
 @media (max-width:639px){
   .h-screen{height:100svh;min-height:100svh}
   nav{font-size:.7rem!important;padding-top:.75rem!important;padding-inline:.75rem!important}
-  .h-\[85vh\]{height:70vh!important}
-  .pb-\[10vh\]{padding-bottom:4vh!important}
+  .h-\\[85vh\\]{height:70vh!important}
+  .pb-\\[10vh\\]{padding-bottom:4vh!important}
   .sticky.top-24{top:calc(var(--spacing)*16)!important}
   #contact{padding-top:3rem!important;padding-bottom:3rem!important;min-height:auto!important}
   #contact .absolute.bottom-8{position:relative!important;bottom:auto!important;margin-top:2rem;padding-bottom:1rem!important}
   #contact a.group{padding:1rem 1.25rem!important;border-radius:20px!important}
   #contact a.group .text-xl{font-size:.95rem!important;word-break:break-word}
-  .rounded-\[40px\]{border-radius:24px}
-  .rounded-t-\[40px\]{border-top-left-radius:24px;border-top-right-radius:24px}
+  .rounded-\\[40px\\]{border-radius:24px}
+  .rounded-t-\\[40px\\]{border-top-left-radius:24px;border-top-right-radius:24px}
   .pt-20{padding-top:3rem!important}
   .pb-32{padding-bottom:4rem!important}
   .mb-16{margin-bottom:2rem!important}
   .gap-4{gap:.75rem}
+  /* Hero heading: bring text ABOVE portrait image on mobile */
+  .h-screen > .overflow-hidden{z-index:20!important;position:relative}
+  .h-screen > .overflow-hidden h1.hero-heading{font-size:13vw!important;text-shadow:0 2px 20px rgba(0,0,0,.6)}
+  /* Push portrait image down so it doesn't overlap the name */
+  .h-screen > .absolute.left-1\/2{top:auto!important;bottom:0!important;transform:translateX(-50%)!important;translate:none!important;z-index:10}
+  .h-screen > .absolute.left-1\/2 img{max-height:50vh;width:240px!important}
 }
