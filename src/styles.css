@@ -42,10 +42,7 @@ html, body {
     font-size: 0.65rem !important;
   }
   
-  /* Tighter project card padding */
-  .sticky.top-24 .p-4 {
-    padding: 0.75rem !important;
-  }
+
   
   /* Ensure email doesn't overflow on small screens */
   .text-xl.font-bold, .sm\:text-2xl {
@@ -101,16 +98,7 @@ html, body {
     -webkit-tap-highlight-color: transparent;
   }
   
-  /* Project cards: ensure image doesn't overflow rounded corners */
-  .sticky.top-24 img {
-    border-radius: 20px !important;
-  }
+
 }
 
-/* Tablet portrait (640px - 1023px) */
-@media (min-width: 640px) and (max-width: 1023px) {
-  /* Ensure project images scale well on tablets */
-  .sticky.top-24 {
-    height: 80vh !important;
-  }
-}
+
