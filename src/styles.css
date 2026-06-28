@@ -9,9 +9,8 @@
 
 /* === MOBILE UX FIXES === */
 
-/* Prevent horizontal overflow on all devices */
-html, body {
-  overflow-x: hidden;
+/* Prevent horizontal overflow without breaking sticky positioning */
+body {
   -webkit-overflow-scrolling: touch;
 }
 
